@@ -23,7 +23,7 @@ function makeSound(key){
                         audio.play();
                 break;
                 default :
-                        var audio = new Audio('sounds/bark.mp3');
+                        var audio = new Audio('sounds/crash.mp3');
                         audio.play();
 
  }
