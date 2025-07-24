@@ -30,14 +30,10 @@ function makeSound(key){
 
 }
 
-function alertall(){
-    var buttonInnerHTML=this.innerHTML;
-    makeSound(buttonInnerHTML);
-        
-}
-
 for( var i=0 ; i<document.querySelectorAll(".drum").length; i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click",alertall);
+    document.querySelectorAll(".drum")[i].addEventListener("click",function(){
+        makeSound(this.innerHTML);
+    });
 }
 
 document.addEventListener("keydown",function(event){
